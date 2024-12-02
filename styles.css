@@ -411,6 +411,17 @@ a {
     transform: translateY(-2px);
 }
 
+.submodule-list {
+    display: none;
+}
+.submodule-list.show {
+    display: block;
+}
+.module-heading {
+    cursor: pointer;
+}
+
+
 
 
 /* Footer */

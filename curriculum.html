@@ -15,6 +15,9 @@
         .submodule-list {
             display: none;
         }
+        .submodule-list.show {
+            display: block;
+        }
         .module-heading {
             cursor: pointer;
         }
@@ -57,13 +60,13 @@
                     <p>Starting with no skills other than being able to read, you will be able to build your own custom AI chatbot website in about 2 hours you can share with your friends</p>
                     <ul class="submodule-list">
                         <li>Submodule 2.1: Build a simple chatbot with Google Colab</li>
-                        <li>Submodule 2.2: Customize your chatbot to be smarter than chatGPT in a topic you care about (ex: SAT-Prep)</li>
+                        <li>Submodule 2.2: Customize your chatbot to be smarter than ChatGPT in a topic you care about (e.g., SAT-Prep)</li>
                         <li>Submodule 2.3: Deploy your custom chatbot to a website and share it with your friends</li>
                     </ul>
                 </li>
                 <li>
-                    <h3 class="module-heading">Module 3: Prototype a iOS/android grocery app</h3>
-                    <p>You will be able to snap a photo of your groceries and the app will inform you which food it thinks may expire soon</p>
+                    <h3 class="module-heading">Module 3: Prototype an iOS/Android grocery app</h3>
+                    <p>You will be able to snap a photo of your groceries, and the app will inform you which food it thinks may expire soon</p>
                     <ul class="submodule-list">
                         <li>Submodule 3.1: Setting Up React-Native (lets you code once for both iOS and Android)</li>
                         <li>Submodule 3.2: Build the prototype</li>
@@ -71,13 +74,65 @@
                     </ul>
                 </li>
                 <li>
-                    <h3 class="module-heading">Module 4: Going from prototype to appstore</h3>
+                    <h3 class="module-heading">Module 4: Going from prototype to App Store</h3>
                     <p>Learn how to build a great user interface for your app and meet Apple/Google requirements</p>
                     <ul class="submodule-list">
                         <li>Submodule 4.1: UI design</li>
-                        <li>Submodule 4.2: Appstore requirements in app</li>
-                        <li>Submodule 4.3: Appstore requirements out of app (privacy policy, etc)</li>
+                        <li>Submodule 4.2: App Store requirements in-app</li>
+                        <li>Submodule 4.3: App Store requirements out-of-app (privacy policy, etc.)</li>
                     </ul>
                 </li>
                 <li>
-                    <h3 class="module-heading">Module 5: Ap
+                    <h3 class="module-heading">Module 5: App Store review process</h3>
+                    <p>Learn how to navigate the infamous App Store review process</p>
+                    <ul class="submodule-list">
+                        <li>Submodule 5.1: Apple review process</li>
+                        <li>Submodule 5.2: Google Play review process</li>
+                        <li>Submodule 5.3: Tips to make them happy</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="module-heading">Module 6: Launching/marketing your app</h3>
+                    <p>Get past the critical milestone of your first 100 users</p>
+                    <ul class="submodule-list">
+                        <li>Submodule 6.1: Demo your app in person</li>
+                        <li>Submodule 6.2: Test ideas with Meta Ads</li>
+                        <li>Submodule 6.3: Other marketing ideas</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="course-cta">
+                <a href="waitlist.html" class="primary-btn">Update me when content is released</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://www.instagram.com/rackleycity"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/rackcitybc"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/nickrackley"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2024 Nick Rackley. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript to handle the dropdown functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var moduleHeadings = document.querySelectorAll('.module-heading');
+            moduleHeadings.forEach(function(heading) {
+                heading.addEventListener('click', function() {
+                    var parentLi = heading.parentElement;
+                    var submoduleList = parentLi.querySelector('.submodule-list');
+                    if (submoduleList) {
+                        submoduleList.classList.toggle('show');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
