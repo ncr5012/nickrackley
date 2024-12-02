@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MKLFX87SHC"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MKLFX87SHC');
+    </script>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+        function getMobileOperatingSystem() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            
+            if (/windows phone/i.test(userAgent)) {
+                return "Windows Phone";
+            }
+
+            if (/android/i.test(userAgent)) {
+                return "Android";
+            }
+
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                return "iOS";
+            }
+
+            return "unknown";
+        }
+
+        function redirectToStore() {
+            var os = getMobileOperatingSystem();
+            console.log("Detected OS:", os);
+
+            var location = "Nick";
+            var event;
+            var redirectUrl;
+
+            if (os === "iOS") {
+                // Replace with your actual App Store URL
+                redirectUrl = 'https://apps.apple.com/us/app/glyphz/id6720708677';
+                event = "iOS";
+
+            } else if (os === "Android") {
+                // Replace with your actual Google Play Store URL
+                redirectUrl = 'https://play.google.com/store/apps/details?id=com.waypost&hl=en_US';
+                event = "Android";
+            } else {
+                // Fallback URL for other devices
+                redirectUrl = 'https://glyphzapp.com';
+                event = "Other";
+            }
+
+            // Send ping to the server
+            fetch('https://script.google.com/macros/s/AKfycbwSrC7uW3GXB_45Qnb6opLjyG06xpFNSYLjIEzGvXhWEAVJW2imyJQd8DJg4s40QIST/exec', {
+                method: 'POST',
+                body: JSON.stringify({ location, event }),
+                headers: { 'Content-Type': 'application/json' }
+            }).catch(console.error);
+
+            // Redirect the user
+            window.location.href = redirectUrl;
+        }
+
+        window.onload = function() {
+            redirectToStore();
+        }
+    </script>
+</head>
+<body>
+    <h1>Please wait, you are being redirected...</h1>
+</body>
+</html>

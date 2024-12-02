@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MKLFX87SHC"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MKLFX87SHC');
+    </script>
+    <meta charset="UTF-8">
+    <title>Glyphz</title>
+    <meta name="description" content="Download our mobile app for Android and iOS.">
+    <!-- Smart App Banner for iOS -->
+    <meta name="apple-itunes-app" content="app-id=6720708677">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .app-logo {
+            max-width: 200px;
+        }
+        h1 {
+            color: #333333;
+        }
+        p {
+            color: #666666;
+            font-size: 18px;
+        }
+        .video-container {
+            margin: 20px auto;
+            max-width: 560px;
+        }
+        .video-container iframe {
+            width: 100%;
+            height: 315px;
+        }
+        .download-buttons {
+            margin-top: 20px;
+        }
+        .download-buttons img {
+            width: 200px;
+            margin: 20px 10px;
+        }
+        .android-button {
+            display: inline-block;
+            background-color: #a4c639; /* Android green */
+            color: #ffffff;
+            padding: 15px 25px;
+            margin: 20px 10px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            font-family: 'Arial', sans-serif;
+        }
+        .android-button:hover {
+            background-color: #8ab434;
+        }
+        footer {
+            margin-top: 50px;
+        }
+        footer a {
+            margin: 0 15px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        /* Styles for language selector */
+        .language-selector {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .language-selector label {
+            margin-right: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <label for="language">Select Language/Seleccionar idioma/选择语言:</label>
+        <select id="language">
+            <option value="">English</option>
+            <option value="es">Español</option>
+            <option value="vi">Tiếng Việt</option>
+            <option value="ar">العربية</option>
+            <option value="zh-CN">中文 (简体)</option>
+            <option value="ja">日本語</option>
+            <option value="ko">한국어</option>
+            <option value="hi">हिन्दी</option>
+            <option value="ru">Русский</option>
+        </select>
+    </div>
+
+    <div class="container">
+        <img src="Icon.png" alt="App Logo" class="app-logo">
+        <h1>Welcome to Glyphz!</h1>
+        <p>Start learning a new language now!</p>
+
+        <!-- Embedded YouTube Video -->
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/rAhxwl75b8o?vq=hd1080" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!-- Download Buttons -->
+        <div class="download-buttons">
+            <!-- App Store Button -->
+            <a href="https://apps.apple.com/us/app/glyphz/id6720708677">
+                <img src="images/appstore-badge.png" alt="Download on the App Store">
+            </a>
+            <!-- Google Play Store Button -->
+            <a href="https://play.google.com/store/apps/details?id=com.waypost&pcampaignid=web_share">
+                <img src="images/google_play-badge.png" alt="Download on the Google Play Store">
+            </a>
+        </div>
+
+        <footer>
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="terms.html">Terms of Service</a> |
+            <a href="delete.html">Delete Account</a> |
+            <a href="support.html">Support</a>
+        </footer>
+    </div>
+
+    <!-- JavaScript for language selector -->
+    <script>
+        document.getElementById('language').addEventListener('change', function() {
+            var lang = this.value;
+            if (lang) {
+                var url = 'https://translate.google.com/translate?hl=' + lang + '&sl=auto&tl=' + lang + '&u=' + encodeURIComponent(window.location.href);
+                window.location.href = url;
+            } else {
+                window.location.href = window.location.href.split('#')[0];
+            }
+        });
+    </script>
+</body>
+</html>
