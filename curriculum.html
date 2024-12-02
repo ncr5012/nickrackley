@@ -2,34 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Your Name - Curriculum</title>
-    <meta name="description" content="Explore the curriculum and courses offered by [Your Name].">
+    <title>Nick Rackley - Build AI with AI Curriculum</title>
+    <meta name="description" content="Explore the curriculum and courses offered by Nick Rackley on Building AI with AI.">
+    <!-- Include Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Link to the external stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Additional styles for dropdown functionality -->
+    <style>
+        .submodule-list {
+            display: none;
+        }
+        .module-heading {
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation Bar -->
-    <header>
-        <!-- ...same navigation as index.html... -->
+    <header class="banner">
+        <nav class="navbar">
+            <div class="logo">Nick Rackley</div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="curriculum.html">Programs</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="videos.html">Content</a></li>
+                <li><a href="waitlist.html" class="cta-button">Join Community</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Curriculum Content -->
     <main>
         <section class="courses">
-            <h2>Curriculum Outline</h2>
-            <p>Take a look at the courses and content I offer:</p>
+            <h2>How to build AI Apps with AI Program</h2>
+            <p>Embark on a journey to learn how to build AI applications using AI-powered tools. Below is an outline of what you'll learn:</p>
             <ul class="course-list">
                 <li>
-                    <h3>Course 1: Introduction to [Topic]</h3>
-                    <p>Brief description of Course 1.</p>
+                    <h3 class="module-heading">Module 1: Introduction</h3>
+                    <p>Introductory content to orient you to the course</p>
+                    <ul class="submodule-list">
+                        <li>1.1: Who this course is for</li>
+                        <li>1.2: Hacker principles </li>
+                        <li>1.3: On programming languages/terms/professional developer stuff (spoiler: you don't need to care about any of this with AI)</li>
+                    </ul>
                 </li>
-                <!-- Repeat for other courses -->
-            </ul>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <!-- ...same footer as index.html... -->
-    </footer>
-</body>
-</html> 
+                <li>
+                    <h3 class="module-heading">Module 2: Learn2Code project</h3>
+                    <p>Starting with no skills other than being able to read, you will be able to build your own custom AI chatbot website in about 2 hours you can share with your friends</p>
+                    <ul class="submodule-list">
+                        <li>Submodule 2.1: Build a simple chatbot with Google Colab</li>
+                        <li>Submodule 2.2: Customize your chatbot to be smarter than chatGPT in a topic you care about (ex: SAT-Prep)</li>
+                        <li>Submodule 2.3: Deploy your custom chatbot to a website and share it with your friends</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="module-heading">Module 3: Prototype a iOS/android grocery app</h3>
+                    <p>You will be able to snap a photo of your groceries and the app will inform you which food it thinks may expire soon</p>
+                    <ul class="submodule-list">
+                        <li>Submodule 3.1: Setting Up React-Native (lets you code once for both iOS and Android)</li>
+                        <li>Submodule 3.2: Build the prototype</li>
+                        <li>Submodule 3.3: Test your prototype</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="module-heading">Module 4: Going from prototype to appstore</h3>
+                    <p>Learn how to build a great user interface for your app and meet Apple/Google requirements</p>
+                    <ul class="submodule-list">
+                        <li>Submodule 4.1: UI design</li>
+                        <li>Submodule 4.2: Appstore requirements in app</li>
+                        <li>Submodule 4.3: Appstore requirements out of app (privacy policy, etc)</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="module-heading">Module 5: Ap

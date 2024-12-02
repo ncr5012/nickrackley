@@ -292,6 +292,127 @@ a {
     cursor: pointer;
 }
 
+/* About Me Section */
+.about-me {
+    padding: 5rem 5%;
+    background-color: var(--light-gray);
+}
+
+.about-me-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-me-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-me-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.about-me-text {
+    flex: 2;
+    min-width: 300px;
+}
+
+.about-me-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.about-me-text p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--dark-gray);
+}
+
+.primary-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    margin-top: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Courses Section */
+.courses {
+    padding: 5rem 5%;
+    background-color: var(--light-gray);
+}
+
+.courses h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.courses p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: var(--dark-gray);
+    text-align: center;
+}
+
+.course-list {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.course-list li {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.course-list h3 {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.course-list p {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.course-cta {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.primary-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    margin-top: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+
 /* Footer */
 footer {
     background-color: #333;

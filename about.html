@@ -2,30 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Your Name - About Me</title>
-    <meta name="description" content="Learn more about [Your Name].">
+    <title>Nick Rackley - About Me</title>
+    <meta name="description" content="Learn more about Nick Rackley.">
     <link rel="stylesheet" href="styles.css">
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-Fo3rlrZj/k7ujYxM1ntSc9Cd0o6aMB0p53A2qP9QCbZ/U1IzVEmUehxjV+rzW7+O" crossorigin="anonymous">
+    <!-- Include Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation Bar -->
-    <header>
-        <!-- ...same navigation as index.html... -->
+    <header class="banner">
+        <nav class="navbar">
+            <div class="logo">Nick Rackley</div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="curriculum.html">Programs</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="videos.html">Content</a></li>
+                <li><a href="waitlist.html" class="cta-button">Join Community</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- About Me Content -->
     <main>
-        <section>
-            <h2>About Me</h2>
-            <p>Hi, I'm [Your Name], and I'm passionate about [Your Passion].</p>
-            <p>[Add more details about your background, experience, and achievements.]</p>
-            <!-- Optional: Add a profile image -->
-            <!-- <img src="images/profile.jpg" alt="[Your Name]"> -->
+        <section class="about-me">
+            <div class="container">
+                <div class="about-me-content">
+                    <div class="about-me-image">
+                        <img src="./images/nick.jpeg" alt="Nick Rackley">
+                    </div>
+                    <div class="about-me-text">
+                        <h2>About Me</h2>
+                        <p>Hi, I'm Nick Rackley, and I'm passionate about helping people unlock their creative potential with AI. I single-handily developed a leading AI-language learning app called Glyphz in one month, primarily by using chatGPT to substitute for a team of engineers. I then marketed it using primarily AI generated image and video ads. So many of my friends were shocked that an Army guy who didnt know how to code could transform their skillset so quickly, and asked me how I did it, so I decided to create this program. </p>
+                        <p>I hold a MBA from Yale and a Masters Degree in Electrical Engineering from the University of Washington. Before learning to code, I worked as a strategy consultant and did 8 years in the U.S. Army. I spend all of my time not coding or helping people code with my wonderful wife and two kids. </p>
+                        <p>Trust me, if I can do this, you can too - let's transform your life together!</p>
+                        <a href="curriculum.html" class="primary-btn">Explore My Programs</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <!-- ...same footer as index.html... -->
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://www.instagram.com/rackleycity"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/rackcitybc"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/nickrackley"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2024 Nick Rackley. All rights reserved.</p>
+        </div>
     </footer>
 </body>
-</html> 
+</html>
