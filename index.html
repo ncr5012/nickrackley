@@ -2,20 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Your Name - Home</title>
-    <meta name="description" content="Welcome to the official website of [Your Name]. Join me on my journey!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Johnson - Lifestyle & Wellness Influencer</title>
+    <meta name="description" content="Join Sarah Johnson on a journey of self-discovery, wellness, and lifestyle transformation. Get exclusive content and join our community!">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation Bar -->
     <header>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <div class="logo">Sarah Johnson</div>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="curriculum.html">Curriculum</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="videos.html">Other Videos</a></li>
-                <li><a href="waitlist.html">Join Waitlist</a></li>
+                <li><a href="curriculum.html">Programs</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="videos.html">Content</a></li>
+                <li><a href="waitlist.html" class="cta-button">Join Waitlist</a></li>
             </ul>
         </nav>
     </header>
@@ -23,15 +26,94 @@
     <!-- Hero Section -->
     <main>
         <section class="hero">
-            <h1>Welcome to My World!</h1>
-            <p>Discover exclusive content, tutorials, and insights.</p>
-            <a href="waitlist.html" class="btn">Join the Waitlist</a>
+            <div class="hero-content">
+                <h1>Transform Your Life Through Mindful Living</h1>
+                <p class="hero-subtitle">Join 100,000+ followers on a journey to wellness, purpose, and authentic living</p>
+                <div class="hero-cta">
+                    <a href="waitlist.html" class="primary-btn">Join the Waitlist</a>
+                    <a href="#featured" class="secondary-btn">Watch Latest Video</a>
+                </div>
+                <div class="social-proof">
+                    <div class="social-stats">
+                        <span><i class="fab fa-instagram"></i> 100K+</span>
+                        <span><i class="fab fa-youtube"></i> 250K+</span>
+                        <span><i class="fab fa-tiktok"></i> 500K+</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://placehold.co/600x800" alt="Sarah Johnson" class="profile-image">
+            </div>
+        </section>
+
+        <!-- Featured Content -->
+        <section id="featured" class="featured">
+            <h2>Featured Content</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <img src="https://placehold.co/400x300" alt="Wellness Guide">
+                    <h3>30-Day Wellness Guide</h3>
+                    <p>Transform your daily routine with mindful practices</p>
+                </div>
+                <div class="content-card">
+                    <img src="https://placehold.co/400x300" alt="Meditation Course">
+                    <h3>Beginner's Meditation</h3>
+                    <p>Start your meditation journey today</p>
+                </div>
+                <div class="content-card">
+                    <img src="https://placehold.co/400x300" alt="Lifestyle Tips">
+                    <h3>Lifestyle Makeover</h3>
+                    <p>Simple tips for a balanced life</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <h2>What My Community Says</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <img src="https://placehold.co/100x100" alt="Testimonial 1" class="testimonial-image">
+                    <p>"Sarah's program changed my life! I've never felt better both mentally and physically."</p>
+                    <h4>- Emma S.</h4>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://placehold.co/100x100" alt="Testimonial 2" class="testimonial-image">
+                    <p>"The community support is amazing. I've found my tribe here!"</p>
+                    <h4>- Michael R.</h4>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://placehold.co/100x100" alt="Testimonial 3" class="testimonial-image">
+                    <p>"Best investment in myself. The results speak for themselves."</p>
+                    <h4>- Lisa M.</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Join the Inner Circle</h2>
+                <p>Get exclusive content, early access to programs, and weekly inspiration straight to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="primary-btn">Subscribe</button>
+                </form>
+            </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2023 [Your Name]. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2024 Sarah Johnson. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
