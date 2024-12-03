@@ -185,8 +185,9 @@ a {
 }
 
 .content-card img {
-    width: 100%;
-    display: block;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
 }
 
 .content-card:hover {
