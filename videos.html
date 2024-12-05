@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Your Name - Other Videos</title>
     <meta name="description" content="Watch videos on how to build AI apps with AI from Nick Rackley">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
     <!-- Navigation Bar -->
     <header class="banner">
         <nav class="navbar">
@@ -24,18 +28,65 @@
         </nav>
     </header>
 
+    <!-- Hero Section (Optional) -->
+    <!-- If you want a hero section similar to the index, you can add one here. Otherwise, skip this.
+    <section class="hero" style="background: linear-gradient(45deg, #730000, #624b4b) ;">
+        <div class="hero-content">
+            <h1>Explore More Content</h1>
+            <p class="hero-subtitle">Deepen your understanding with additional video tutorials</p>
+        </div>
+    </section>
+    -->
 
     <!-- Videos Content -->
     <main>
-        <section class="video-gallery">
-            <h2>Videos</h2>
-            <p>Watch my latest videos:</p>
-            <div class="videos">
-                <div class="video-item">
-                    <iframe src="video_link_1" title="Video 1"></iframe>
-                    <h3>Video Title 1</h3>
+        <section class="featured" style="padding: 60px 20px;">
+            <h2 style="text-align:center;">Videos</h2>
+            <p style="text-align:center; max-width:600px; margin:0 auto;">Watch my latest videos on building AI with AI, even if you're new to coding.</p>
+            
+            <div class="content-grid" style="margin-top:40px;">
+                <div class="content-card" style="text-align:center;">
+                    <iframe 
+                        width="100%" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/yoUGRDSWBYk" 
+                        title="Video 1" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <h3 style="margin-top:20px;">AI explained in 3 minutes...with cars!</h3>
+                    <p>I explain everything you need to know about AI in 3 minutes via a car analogy</p>
                 </div>
-                <!-- Repeat for other videos -->
+                <!-- Add additional video cards as needed -->
+                <!-- Example:
+                <div class="content-card" style="text-align:center;">
+                    <iframe 
+                        width="100%" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/exampleURL" 
+                        title="Video 2" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <h3 style="margin-top:20px;">Video Title 2</h3>
+                    <p>Build an advanced chatbot with no-code tools and AI APIs.</p>
+                </div>
+                -->
+            </div>
+        </section>
+        
+        <!-- Newsletter Section (Optional, to match index style) -->
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Join Our Community</h2>
+                <p>Enter your name and email to stay updated on the latest content.</p>
+                <form action="https://script.google.com/macros/s/AKfycbzyYJ-qPnhzDwgxnPN5EZUdlnOoPCIyK3CdhWE_nhQtyMTeBIidSzlWy9GoqQ-Z2vls/exec" method="POST" class="newsletter-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit" class="primary-btn">Subscribe</button>
+                </form>
             </div>
         </section>
     </main>
@@ -52,4 +103,4 @@
         </div>
     </footer>
 </body>
-</html> 
+</html>
